@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot IA - Messagerie</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="background-blur"></div>
+
+  <div id="app-container">
+    
+    <div id="contacts-column">
+      <div id="overlay"></div>
+
+      <div id="search-wrapper">
+        <input type="text" id="contact-search" placeholder="Rechercher un contact..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="contact" data-character="goku">
+        <div class="profile-wrapper">
+          <img src="assets/goku.jpg" alt="Goku" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">Son Goku</span>
+      </div>
+
+      <div class="contact" data-character="eren">
+        <div class="profile-wrapper">
+          <img src="assets/eren.jpg" alt="Eren" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">Eren Jaeger</span>
+      </div>
+
+      <div class="contact" data-character="luffy">
+        <div class="profile-wrapper">
+          <img src="assets/luffy.jpg" alt="Luffy" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">Monkey D. Luffy</span>
+      </div>
+
+      <div class="contact" data-character="mikasa">
+        <div class="profile-wrapper">
+          <img src="assets/mikasa.jpg" alt="Mikasa Ackerman" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">Mikasa Ackerman</span>
+      </div>
+
+      <div class="contact" data-character="jinx">
+        <div class="profile-wrapper">
+          <img src="assets/jinx.jpg" alt="Jinx" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">Jinx</span>
+      </div>
+
+      <div class="contact" data-character="naruto">
+        <div class="profile-wrapper">
+          <img src="assets/naruto.jpg" alt="Naruto" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">Naruto Uzumaki</span>
+      </div>
+
+      <div class="contact" data-character="vegeta">
+        <div class="profile-wrapper">
+          <img src="assets/vegeta.jpg" alt="Vegeta" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">Vegeta</span>
+      </div>
+
+      <div class="contact" data-character="l">
+        <div class="profile-wrapper">
+          <img src="assets/l.jpg" alt="L" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">L</span>
+      </div>
+
+      <div class="contact" data-character="light">
+        <div class="profile-wrapper">
+          <img src="assets/light.jpg" alt="Light Yagami" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">Light Yagami</span>
+      </div>
+
+      <div class="contact" data-character="saitama">
+        <div class="profile-wrapper">
+          <img src="assets/saitama.jpg" alt="Saitama" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">Saitama</span>
+      </div>
+
+      <div class="contact" data-character="takopi">
+        <div class="profile-wrapper">
+          <img src="assets/takopi.jpg" alt="Takopi" class="profile-pic">
+          <span class="online-badge"></span>
+        </div>
+        <span class="contact-name">Takopi</span>
+      </div>
+    </div>
+
+
+   
+    <div id="chat-column">
+
+      <div id="chat-header">
+        <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <div class="chat-contact-info">
+          <i class="fa-solid fa-arrow-left"></i>
+          <img id="chat-avatar" src="" alt="avatar">
+          
+          <span id="chat-name">Sélectionnez un contact ici</span>
+        </div>
+      </div>
+
+      <div id="placeholder">
+        <h1>Sélectionnez un personnage avec qui discuter</h1>
+        <p>Chatbot développé à l'aide de l'API d'OpenAI</p>
+        <p>Par Hamza Idbouiguiguane</p>
+      </div>
+
+      <div id="messages"></div>
+      <div id="input-area">
+        <input type="text" id="user-input" placeholder="Écris un message..." />
+        <button id="send-btn">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
